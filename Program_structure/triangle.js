@@ -1,11 +1,2 @@
-var i;
-
-for (i = 0; i < 3; i++) {
-  alert( i );
-}
-
-var n;
-
-for (n= '#'; n < 8; n++) {
-    console.log( n );
-}
+for ( var i='#'; i.length<8; i=i+'#')
+  console.log(i)
