@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const randomBodyParts = ["глаз", "нос", "череп"]
+    const randomAdjectives = ["вонючая", "унылая", "дурацкая"]
+    const randomPartsOfAnimals = ["шерсть", "зуб","коготь", "хвост"]
+    const randomAnimals = ["кота","бкгемота","касатки","ежа","Ламы","собаки"]
+    const randomPartsOfAnimal = [randomPartsOfAnimals[Math.floor(Math.random()* randomPartsOfAnimals.length)]]
+    const randomAnimal = [randomAnimals[Math.floor(Math.random() * randomAnimals.length)]]
+    const randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)]
+    const randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)]
+    const randomInsult = ["У тебя", randomBodyPart, "еще более", 
+            randomAdjective, "чем", randomPartsOfAnimal ,  "у", randomAnimal + "!!!"].join(" ");
+
+console.log (randomInsult)
+</script>
+
+</body>
+</html>
