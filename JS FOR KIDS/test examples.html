@@ -8,18 +8,13 @@
 </head>
 <body>
 <script>
-    const randomBodyParts = ["глаз", "нос", "череп"]
-    const randomAdjectives = ["вонючая", "унылая", "дурацкая"]
-    const randomPartsOfAnimals = ["шерсть", "зуб","коготь", "хвост"]
-    const randomAnimals = ["кота","бкгемота","касатки","ежа","Ламы","собаки"]
-    const randomPartsOfAnimal = [randomPartsOfAnimals[Math.floor(Math.random()* randomPartsOfAnimals.length)]]
-    const randomAnimal = [randomAnimals[Math.floor(Math.random() * randomAnimals.length)]]
-    const randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)]
-    const randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)]
-    const randomInsult = ["У тебя", randomBodyPart, "еще более", 
-            randomAdjective, "чем", randomPartsOfAnimal ,  "у", randomAnimal + "!!!"].join(" ");
-
-console.log (randomInsult)
+   var myCrazyObject = {
+        "name": "Нелепый объект",
+        "some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
+        "random animal": "Банановая акула"
+    };
+    console.log(myCrazyObject['some array'][2].number)
+   
 </script>
 
 </body>
